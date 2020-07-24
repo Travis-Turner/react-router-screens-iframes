@@ -1,5 +1,5 @@
 import React from 'react';
-import './Reviews.css';
+import './Review.css';
 import { useParams } from 'react-router-dom';
 
 function Review (props) {
@@ -9,17 +9,16 @@ function Review (props) {
   id = id - 1;
   
   return (
-    <>
+    <div className="review">
       {
         reviews &&
-          <div className="reviews__item">
+          <div className="review__item">
             <h3>{reviews[id].title}</h3>
             <p>{reviews[id].text}</p>
-            <p>Рейтинг:{reviews[id].rating}/5</p>
+            <p className="review__rating">Рейтинг: {reviews[id].rating}/5</p>
           </div>
       }
-
-    </>
+    </div>
   );
 }
 

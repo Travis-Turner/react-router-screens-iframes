@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import Dashboard from './Dashboard';
 import Header from './Header';
+import Content from './Content';
 import Review from './Review';
 import Reviews from './Reviews';
 import AboutMe from './about-me/AboutMe';
@@ -28,26 +29,26 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Switch>
-        <Route exact path="/">
-          <Dashboard />
-        </Route>
-        <Route exact path="/reviews">
-          <Reviews reviews={reviews}/>
-        </Route>
-        <Route exact path="/reviews/:id">
-          <Review reviews={reviews}/>
-        </Route>
-        <Route path="/about-me">
-          <AboutMe />
-        </Route>
-        <Route path="/about-us">
-          <AboutUs />
-        </Route>
-        <Route path="*">
-          <PageNotFound />
-        </Route>
-      </Switch>
+        <Switch>
+          <Route exact path="/">
+            <Dashboard />
+          </Route>
+          <Route exact path="/reviews">
+            <Reviews reviews={reviews}/>
+          </Route>
+          <Route exact path="/reviews/:id">
+            <Review reviews={reviews}/>
+          </Route>
+          <Route path="/about-me">
+            <AboutMe />
+          </Route>
+          <Route path="/about-us">
+            <AboutUs />
+          </Route>
+          <Route path="*">
+            <PageNotFound />
+          </Route>
+        </Switch>
     </div>
   );
 }
