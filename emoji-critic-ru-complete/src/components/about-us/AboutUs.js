@@ -8,7 +8,7 @@ function AboutUs () {
   const { path, url } = useRouteMatch();
   
   return (
-    <div>
+    <div className="about-us">
       <ul>
         <li>
           <Link to={`${url}/site-history`}>История приложения</Link>
