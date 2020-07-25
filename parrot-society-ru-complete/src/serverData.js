@@ -1,7 +1,7 @@
 import annaDark from './images/anna-dark.png';
-import annaLight from './images/anna-dark.png';
+import annaLight from './images/anna-light.png';
 import billDark from './images/bill-dark.png';
-import billLight from './images/bill-dark.png';
+import billLight from './images/bill-light.png';
 
 const serverData = {
   "friends": [
