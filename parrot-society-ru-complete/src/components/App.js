@@ -9,7 +9,7 @@ import serverData from '../serverData';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/web-developer/test/parrot-society-ru-complete/index.html">
       <div className='App'>
         <header className="header">
           <NavLink to='/' className="header__logo">Parrot Friendship Society</NavLink>
