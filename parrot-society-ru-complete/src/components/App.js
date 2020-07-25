@@ -9,7 +9,11 @@ import serverData from '../serverData';
 
 function App() {
   return (
-    <BrowserRouter basename="/web-developer/test/parrot-society-ru-complete">
+    <BrowserRouter basename={
+      process.env.NODE_ENV === 'production'
+        ? '/web-developer/test/parrot-society-ru-complete'
+        : '/'
+    }>
       <div className='App'>
         <header className="header">
           <NavLink to='/' className="header__logo">Parrot Friendship Society</NavLink>
@@ -20,10 +24,7 @@ function App() {
           </nav>
         </header>
         <Switch>
-          <Route exact path='/index.html'> {/* we need this for the initial load on s3 */}
-            <Dashboard />
-          </Route>
-          <Route exact path='/'>
+          <Route exact path={['/', '/index.html']}>
             <Dashboard />
           </Route>
           <Route exact path='/friends'>
