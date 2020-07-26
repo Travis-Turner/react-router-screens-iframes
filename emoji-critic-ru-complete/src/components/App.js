@@ -30,7 +30,7 @@ function App() {
     <div className="App">
       <Header />
         <Switch>
-          <Route exact path="/">
+          <Route exact path={['/', '/index.html']}>
             <Dashboard />
           </Route>
           <Route exact path="/reviews">

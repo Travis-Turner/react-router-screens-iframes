@@ -27,7 +27,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Route path="/">
+      <Route path={['/', '/index.html']}>
         <Dashboard />
       </Route>
       <Route exact path="/reviews">

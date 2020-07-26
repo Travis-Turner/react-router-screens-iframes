@@ -1,10 +1,15 @@
+import annaDark from './images/anna-dark.png';
+import annaLight from './images/anna-light.png';
+import billDark from './images/bill-dark.png';
+import billLight from './images/bill-light.png';
+
 const serverData = {
   "friends": [
     {
       "name": "Саша",
 			"id": "0",
-      "profilePicDark": "/profile-images/bill-dark.png",
-      "profilePicLight": "/profile-images/bill-light.png",
+      "profilePicDark": billDark,
+      "profilePicLight": billLight,
 			"location": "Санкт-Петербург, Россия",
 			"favBirdQuote": "Красна птица пением, а человек – умением.",
       "parrotsOwned": [
@@ -27,8 +32,8 @@ const serverData = {
     {
       "name": "Женя",
 			"id": "1",
-      "profilePicDark": "/profile-images/mary-dark.png",
-      "profilePicLight": "/profile-images/mary-light.png",
+      "profilePicDark": annaDark,
+      "profilePicLight": annaLight,
 			"location": "Владивосток, Россия",
 			"favBirdQuote": "Лучше синица в руках, чем журавль в небе.",
       "parrotsOwned": [
@@ -43,5 +48,6 @@ const serverData = {
     }
   ]
 };
+
 export default serverData;
 
