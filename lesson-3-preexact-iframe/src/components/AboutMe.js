@@ -3,7 +3,7 @@ import './AboutMe.css';
 
 function AboutMe () {
   return (
-    <div>
+    <div className="about">
       <p>Я человек простой. Вижу эмодзи - пишу ревью.</p>
     </div>
   )

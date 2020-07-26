@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 function Dashboard () {
   return (
     <div className="dashboard">
+      <h2>Emoji Critic — всё об эмодзи</h2>
       <p>
        #1 среди авторов обзоров на эмодзи в 2020 году!
       </p>
@@ -16,3 +17,4 @@ function Dashboard () {
 }
 
 export default Dashboard;
+

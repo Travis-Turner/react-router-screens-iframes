@@ -3,7 +3,7 @@ import './Reviews.css';
 
 function Reviews () {
   return (
-    <div>
+    <div className="reviews">
       <p>Здесь будут ревью!</p>
     </div>
   )

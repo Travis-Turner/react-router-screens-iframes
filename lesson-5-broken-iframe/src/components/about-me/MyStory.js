@@ -1,10 +1,11 @@
 import React from 'react';
+import './AboutContent.css';
 
 function MyStory () {
   return (
-    <div>
+    <div className="about-content">
       <p>
-       I’m just a simple person with a simple dream - to share my emoji expertise with the world!
+        Я человек с простой мечтой — поделиться своими знаниями в области эмодзи с миром!
       </p>
     </div>
   )

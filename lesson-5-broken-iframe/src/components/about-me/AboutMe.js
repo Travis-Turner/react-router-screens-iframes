@@ -7,7 +7,7 @@ import Contact from './Contact';
 
 function AboutMe () {
   return (
-    <div>
+    <div className="about-me">
       <ul className="links">
         <li>
           <Link to="/my-story">Моя история</Link>
