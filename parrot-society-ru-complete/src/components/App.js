@@ -11,7 +11,7 @@ function App() {
   return (
     <BrowserRouter basename={
       process.env.NODE_ENV === 'production'
-        ? '/web-developer/test/parrot-society-ru-complete'
+        ? '/web-developer/widgets/react-parrot-society-ru-complete'
         : '/'
     }>
       <div className='App'>

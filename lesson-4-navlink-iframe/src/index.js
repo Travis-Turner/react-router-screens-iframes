@@ -7,7 +7,11 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={
+      process.env.NODE_ENV === 'production'
+        ? '/web-developer/widgets/react-lesson-4-navlink-iframe'
+        : '/'
+    }>
       <App />
     </BrowserRouter>
   </React.StrictMode>,
