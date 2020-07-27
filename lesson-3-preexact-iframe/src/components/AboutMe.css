@@ -4,7 +4,6 @@
   align-items: center;
   text-align: center;
   min-height: calc(100vh - 140px);
-  justify-content: center;
 }
 
 .about h2 {
