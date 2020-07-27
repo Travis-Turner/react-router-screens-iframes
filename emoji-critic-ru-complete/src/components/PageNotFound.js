@@ -1,14 +1,13 @@
 import React from 'react';
-import './PageNotFound.css';
 
 function PageNotFound () {
   return (
     <div className="reviews">
       <h3>
-       404 - Page Not Found!
+        404 - Страница не найдена
       </h3>
       <p>
-        Uh oh! There's nothing here... sorry. 🥺
+        Ой, здесь ничего нет 🥺
       </p>
     </div>
   )
