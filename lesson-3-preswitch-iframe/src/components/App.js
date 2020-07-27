@@ -30,7 +30,7 @@ function App() {
       <Route path={['/', '/index.html']}>
         <Dashboard />
       </Route>
-      <Route exact path="/reviews">
+      <Route path="/reviews">
         <Reviews reviews={reviews}/>
       </Route>
       <Route exact path="/reviews/:id">

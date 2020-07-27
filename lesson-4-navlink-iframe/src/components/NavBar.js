@@ -6,7 +6,7 @@ function NavBar () {
   return (
     <nav className="menu">
       <NavLink exact to="/" activeClassName="menu__link_active" className="menu__link">Домой</NavLink>
-      <NavLink to="/reviews" activeClassName="menu__link_active" className="menu__link">Обзоры эмоджи</NavLink>
+      <NavLink to="/reviews" activeClassName="menu__link_active" className="menu__link">Обзоры эмодзи</NavLink>
       <NavLink to="/about-me" activeClassName="menu__link_active" className="menu__link">Обо мне</NavLink>
     </nav>
   )
